@@ -41,7 +41,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         // Thermal Profiles
-        ThermalUtils.startService(context);
+        ThermalUtils.initialize(context);
 
         // Dynamic Refresh Rate
         DisplayUtils.updateRefreshRateSettings(context);
