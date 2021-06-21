@@ -26,6 +26,7 @@ import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.kcal.KcalUtils;
+import org.lineageos.settings.haptic.HapticUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -40,5 +41,8 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         // Kcal
         KcalUtils kcalUtils = new KcalUtils(context);
         kcalUtils.restoreSettings();
+
+        // Vibrator
+        HapticUtils.restoreLevel(context);
     }
 }
