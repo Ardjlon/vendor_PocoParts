@@ -16,6 +16,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <style name="DeviceSettingsTheme" parent="@android:style/Theme.DeviceDefault.Settings"> 
+      <item name="preferenceTheme">@style/PreferenceTheme</item>
+    </style>
+
+    <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.SettingsBase" />
+
     <style name="Theme.Main" parent="@android:style/Theme.DeviceDefault.Settings">
         <item name="dialogPreferenceStyle">@style/Theme.Main.DialogPreferenceStyle</item>
         <item name="preferenceCategoryStyle">@style/Theme.Main.PreferenceCategoryStyle</item>
